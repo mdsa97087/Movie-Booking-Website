@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg text-light"
+      style="background-color: #a10035"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Navbar</a>
+        <!--  ----------NAVBAR ICON ------------ -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light fw-bold"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+
+            <form class="d-flex" role="search">
+              <input
+                oninput="GetData()"
+                class="form-control me-10"
+                id="searchData"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+
+              <button onclick="GetData()" id="searchData" class="searchdiv">
+                <img
+                  class="searchicon"
+                  src="https://cdn.iconscout.com/icon/free/png-64/search-1884660-1598387.png
+                "
+                  alt=""
+                />
+              </button>
+            </form>
+          </ul>
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item">
+              <a class="nav-link active text-light fw-bold" href="Login.html"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="SignUp.html"
+                >Signup</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="Cart.html">
+                <img
+                  class="cartimg"
+                  src="https://cdn.iconscout.com/icon/premium/png-64-thumb/cart-1956912-1650878.png
+                  "
+                  alt=""
+                />
+              </a>
+            </li>
+            <li
+              class="nav-item"
+              style="display: flex; gap: 0px; padding: 0%; width: 150px"
+            >
+              <a class="nav-link text-light fw-bold" href="Wallet.html">
+                <img
+                  style="padding: 0px"
+                  class="cartimg"
+                  src="https://cdn3d.iconscout.com/3d/premium/thumb/wallet-3597245-3010225.png
+                      "
+                  alt=""
+                />
+              </a>
+              <img
+                style="margin-left: -25px"
+                src="https://cdn3d.iconscout.com/3d/premium/thumb/rupee-sign-3028218-2526894.png
+              "
+                alt=""
+                width="60px"
+                height="30px"
+              />
+              <h4 style="margin-left: -8px; color: #fee3ec" id="wallet"></h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--    -------------- another section ----------- -->
+
+    <div id="movies">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img
+              src="https://assets-in.bmscdn.com/promotions/cms/creatives/1665497236081_ccwebdl.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://assets-in.bmscdn.com/promotions/cms/creatives/1665636072511_wert.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://assets-in.bmscdn.com/promotions/cms/creatives/1665747023641_spidermanweb.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://assets-in.bmscdn.com/promotions/cms/creatives/1665573474697_zee.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://assets-in.bmscdn.com/promotions/cms/creatives/1664542245264_2qwfegrht.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="moviecart"></div>
+    </div>
+
+    <!--    --------      ANOTHER SECTION     ---------- -->
+
+    <div>
+      <h1 style="text-align: center">Recommended Movies</h1>
+    </div>
+
+    <!-- ----------         API DATA MOVIE      --------    -->
+    <div class="moviediv44">
+      <div class="moviediv4" id="apidiv1001"></div>
+      <div class="moviediv4" id="apidiv1002"></div>
+      <div class="moviediv4" id="apidiv1003"></div>
+      <div class="moviediv4" id="apidiv1004"></div>
+    </div>
+
+    <div
+      class=""
+      style="
+        width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        /* border: 1px solid; */
+        /* justify-content: space-between; */
+        justify-content: center;
+        text-align: center;
+        gap: 35px;
+      "
+    >
+      <img
+        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MTI3ayBsaWtlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00117411-cpjhmvqmfe-portrait.jpg
+                               "
+        alt="..."
+        width="280px"
+        height="300px"
+      />
+
+      <img
+        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODAlICAzayB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00305720-ddhttlxndk-portrait.jpg"
+        alt="..."
+        width="280px"
+        height="300px"
+      />
+
+      <img
+        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzElICA4MjEgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00340525-ctqbdmderz-portrait.jpg"
+        alt="..."
+        width="280px"
+        height="300px"
+      />
+
+      <img
+        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-OTclICAxMWsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00342025-bfznknnpek-portrait.jpg
+                                    "
+        alt="..."
+        width="280px"
+        height="300px"
+      />
+
+      <img
+        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODUlICAxNTRrIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00323897-lwrvzxglzr-portrait.jpg"
+        alt="..."
+        width="280px"
+        height="300px"
+      />
+
+      <img
+        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-OTUlICA0ayB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00336339-pgamkwuvva-portrait.jpg"
+        alt="..."
+        width="280px"
+        height="300px"
+      />
+      <img
+        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODYlICA1OGsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00319143-egauxbljnf-portrait.jpg"
+        alt="..."
+        width="280px"
+        height="300px"
+      />
+      <img
+        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODAlICAxayB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00339953-wqsdqmdaql-portrait.jpg"
+        alt="..."
+        width="280px"
+        height="300px"
+      />
+    </div>
+    <div id="movie"></div>
+  </body>
+</html>
+
+<script src="Script/index.js"></script>
+
+<script src="Script/indexMovie1.js"></script>
+<script src="Script/indexMovie2.js"></script>
+<script src="Script/indexMovie3.js"></script>
+<script src="Script/indexMovie4.js"></script>

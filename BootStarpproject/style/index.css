@@ -1,0 +1,117 @@
+.container-fluid {
+      /* border: 2px solid blue; */
+      margin: auto;
+      width: 80vw;
+}
+
+.navbar-nav {
+      /* border: 1px solid white; */
+      gap: 30px;
+      align-items: center;
+      /* justify-content: center; */
+}
+
+.form-control {
+      width: 30vw;
+      border-radius: 0%;
+      outline: none;
+      border: none;
+}
+
+.searchicon {
+      height: 25px;
+      background-color: white;
+}
+
+.searchdiv {
+      /* border: 1px solid black; */
+      height: 40px;
+      width: 40px;
+      background-color: white;
+      align-items: center;
+
+      border: none;
+}
+
+.cartimg {
+      /* border: 1px solid blue; */
+      height: 50px;
+}
+
+#movies {
+      /* border: 1px solid red; */
+      width: 80vw;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      gap: 15px;
+      margin-top: 30px;
+      /* align-items: center; */
+      justify-content: center;
+}
+
+.carousel-item {
+      width: 80vw;
+}
+
+.d-block {
+      width: 80vw;
+      height: 40vh;
+}
+
+#moviecart {
+      justify-content: space-around;
+      width: 300px;
+      position: absolute;
+      /* border: 10px solid red; */
+      background-color: #F2DF3A;
+      z-index: 999;
+      margin: auto;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#h1titlecart {
+      padding: 15px;
+      font-size: 3rem;
+      color: #3330E4;
+      text-align: center;
+}
+#h4titlecart{
+      font-size: 2rem;
+      color: #99154E;
+}
+
+.moviediv44 {
+      display: flex;
+      flex-wrap: wrap;
+      /* border: 2px solid rebeccapurple; */
+      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin:15px;
+      gap: 20px;
+}
+
+.book_now{
+      border-radius: 10px;
+      padding: 5px;
+      width: 150px;
+      background-color: #06FF00;
+}
+
+.moviediv4 {}
+
+
+
+
+@media all and (min-width: 0px) and (max-width: 700px) {
+      .carousel-item {
+            width: 80vw;
+      }
+
+      .d-block {
+            width: 80vw;
+            height: 20vh;
+      }
+}

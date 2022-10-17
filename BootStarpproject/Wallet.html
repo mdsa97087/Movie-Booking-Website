@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/Wallet.css" />
+  </head>
+
+  <body>
+    <div id="add-money">
+      <button id="book_movies">
+        <a href="index.html">
+          <img
+            src="https://cdn.iconscout.com/icon/premium/png-64-thumb/back-arrow-3208451-2707514.png
+            "
+            alt=""
+            width="40px"
+            height="20px"
+          />
+          Go To Home Page</a
+        >
+      </button>
+      <!-- <br> -->
+      <div
+        style="justify-content: space-between; flex-wrap: wrap; margin: auto"
+      >
+        <h2>Add Money to wallet</h2>
+        <br />
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <img
+            src="https://cdn.iconscout.com/icon/premium/png-64-thumb/rupees-2930425-2417560.png
+              "
+            alt=""
+            width="60px"
+            height="30px"
+          />
+          <h1 id="wallet" style="color: red">0</h1>
+        </div>
+      </div>
+      <br />
+      <input id="amount" type="text" placeholder="Enter Amount" />
+      <br />
+      <br />
+      <button id="add_to_wallet" onclick="GetMoney()">Add to wallet</button>
+      <br />
+      <!-- input box for accepting money with id as "amount" -->
+      <!-- button with id as "add_to_wallet" -->
+      <!-- button with id as "book_movies" to go to movies.html -->
+    </div>
+  </body>
+</html>
+<script src="Script/Wallet.js"></script>
