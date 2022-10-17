@@ -15,7 +15,9 @@ function appendMoves(el) {
 
       let divimg = document.createElement("div");
       divimg.setAttribute("id", "imgdivdil");
+
       let himg = document.getElementById("h2img");
+
       let p2 = document.createElement("h2");
       p2.innerText = `  ${el.imdbRating}`;
 
@@ -29,20 +31,22 @@ function appendMoves(el) {
       p51.innerText = `Runtime :- ${el.Runtime}`;
 
       let btn = document.createElement("button");
-      btn.innerText = "Conform Booking";
+      btn.innerText = "Book Tickets";
       btn.setAttribute("id", "conform_btn");
+      btn.addEventListener("click", function () {
+            window.location.href = "Booking.html";
+      });
 
       document.querySelector("#titlediv").append(p1, divimg, p31, p41, p51, btn);
 
       //    ---------------        BACKGROUND IMG CHANGE BY API        --
 
-      document.getElementById(
-            "backimg"
-      ).style.backgroundImage = `url(${data.Poster})`;
+      document.getElementById("backimg")
+      .style.backgroundImage = `url(${data.Poster})`;
 
       // --------------             DETAILS DIV---------------
 
-      let h1 = document.createElement("h1");
+      let h1 = document.createElement("h2");
       h1.innerText = `Name :- ${el.Title}`;
 
       let h5 = document.createElement("h5");

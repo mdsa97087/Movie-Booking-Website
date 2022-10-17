@@ -1,0 +1,111 @@
+* {
+      padding: 0%;
+      margin: 0%;
+}
+
+#bookingbtn{
+      /* border: 2px solid red; */
+      z-index:9999 ;
+      position: absolute;
+      left: 40%;
+      top: 0%;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgb(8, 0, 255);
+      background-color: wheat;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+#bookingmaindiv {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      background-color: #055052;
+      color: #F0A500;
+      justify-content: space-between;
+      position: fixed;
+      padding-top: 0%;
+      z-index: 9999;
+      margin: auto;
+}
+
+
+
+#bookingdiv {
+      /* border: 2px solid green; */
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+
+
+
+}
+
+#bookingdiv2 {
+      /* border: 2px solid green; */
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-right: 15px;
+      flex-wrap: wrap;
+
+
+}
+
+#posterimg {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+}
+
+#alldiv{
+      /* margin-top: 50px; */
+      /* border: 2px solid green; */
+}
+
+#secondbookig{
+      /* margin: 155px 15px 0px 15px; */
+     margin-top: 155px;
+      border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+     flex-wrap: wrap;
+     background-color:#F0E9D2;
+     /* top: 500vh; */
+}
+
+
+.dayclass{
+      /* border: 1px solid; */
+      width: 110px;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 2rem;
+      /* margin-top:50%; */
+      /* margin: 160px 15px 0px 15px; */
+      padding: 15px;
+      background-color: #FF8882;
+      justify-content: center;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* #hallname{
+      margin: 15px 15px;
+      border: 2px solid green;
+      height: 100px;
+      padding: 20px;
+
+} */
+.nameanddetails{
+      margin: 15px 15px;
+      border: 1px solid rgb(212, 221, 212);
+      height: 100px;
+      padding: 20px;
+
+}

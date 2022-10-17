@@ -24,7 +24,7 @@ function appendMoves101(data) {
       img101.src = data.Poster;
       let btn = document.createElement("button");
       btn.setAttribute("class","book_now");
-      btn.innerText = "Book now";
+      btn.innerText = "Book Tickets";
       btn.addEventListener("click", function () {
             localStorage.setItem("movie", JSON.stringify(data));
             window.location.href = "Cart.html";
