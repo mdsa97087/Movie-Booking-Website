@@ -1,11 +1,12 @@
 * {
       padding: 0%;
       margin: 0%;
+      text-decoration: none;
 }
 
-#bookingbtn{
+#bookingbtn {
       /* border: 2px solid red; */
-      z-index:9999 ;
+      z-index: 9999;
       position: absolute;
       left: 40%;
       top: 0%;
@@ -18,8 +19,25 @@
       box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+#alldiv {
+      /* border: 2px solid red; */
+      display: grid;
+      grid-template-columns: 1fr;
+      flex-wrap: wrap;
+
+}
+
+#day_details {
+      /* border: 2px solid blue; */
+      margin: 156px 5px 0px 5px;
+
+      /* position: relative; */
+
+}
+
 
 #bookingmaindiv {
+      /* border: 1px solid red; */
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -29,9 +47,8 @@
       color: #F0A500;
       justify-content: space-between;
       position: fixed;
-      padding-top: 0%;
-      z-index: 9999;
-      margin: auto;
+      z-index: 10;
+
 }
 
 
@@ -55,7 +72,6 @@
       margin-right: 15px;
       flex-wrap: wrap;
 
-
 }
 
 #posterimg {
@@ -64,32 +80,24 @@
       border-radius: 50%;
 }
 
-#alldiv{
-      /* margin-top: 50px; */
-      /* border: 2px solid green; */
-}
-
-#secondbookig{
-      /* margin: 155px 15px 0px 15px; */
-     margin-top: 155px;
-      border: 2px solid red;
+#secondbookig {
+      /* border: 2px solid black; */
       display: flex;
       justify-content: space-between;
-     flex-wrap: wrap;
-     background-color:#F0E9D2;
-     /* top: 500vh; */
+      flex-wrap: wrap;
+      background-color: #F0E9D2;
+
 }
 
 
-.dayclass{
+.dayclass {
       /* border: 1px solid; */
       width: 110px;
       display: flex;
       flex-wrap: wrap;
-      font-size: 2rem;
-      /* margin-top:50%; */
-      /* margin: 160px 15px 0px 15px; */
+      font-size: 1.4rem;
       padding: 15px;
+      margin-top: 2px;
       background-color: #FF8882;
       justify-content: center;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -102,10 +110,40 @@
       padding: 20px;
 
 } */
-.nameanddetails{
+.nameanddetails {
       margin: 15px 15px;
       border: 1px solid rgb(212, 221, 212);
       height: 100px;
       padding: 20px;
 
+}
+
+#timebtn {
+      position: absolute;
+      padding: 10px;
+      margin: 35px 25%;
+}
+
+
+.bookbtnonclick {
+      border: none;
+      position: absolute;
+      padding: 5px;
+      font-size: 1.5rem;
+      margin: 35px 50%;
+      text-align: center;
+      background-color: #00FFAB;
+      color: red;
+      width: 100px;
+      border-radius: 10px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+@media all and (min-width:0px) and (max-width:700px) {
+      #day_details {
+            /* border: 2px solid blue; */
+            margin-top: 360px;
+
+
+      }
 }
