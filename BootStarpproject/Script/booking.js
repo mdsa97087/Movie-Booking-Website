@@ -1,6 +1,6 @@
 let data = JSON.parse(localStorage.getItem("movie"));
 appendMoves(data);
-console.log(data);
+// console.log(data);
 
 function appendMoves(el) {
       let img = document.createElement("img");
@@ -74,12 +74,37 @@ function appendMoves(el) {
       month = month.slice(0, 3);
       document.querySelector("#dateDay1").append(day1, date, month);
 
+      // ------------USE LOCAL STORAGE--------------
+
+      let day11 = document.getElementById("dateDay1")
+      let data11 = [day1, date, month]
+      day11.addEventListener("click", function () {
+            localStorage.setItem("day1", JSON.stringify(data11))
+            day11.style.background = "green"
+            day11.style.color = "white"
+
+            console.log(data11)
+      })
+
       var now2 = new Date();
       var day2 = dayNames[nextWorkingDay2[now2.getDay()]];
       var date = today.getUTCDate() + 1 + " ";
       var month = today.toLocaleString("default", { month: "long" });
       month = month.slice(0, 3);
       document.querySelector("#dateDay2").append(day2, date, month);
+
+      // ------------USE LOCAL STORAGE--------------
+
+      let day12 = document.getElementById("dateDay2")
+      let data12 = [day2, date, month]
+      day12.addEventListener("click", function () {
+            localStorage.setItem("day1", JSON.stringify(data12))
+            console.log(data12)
+            day12.style.background = "green"
+            day12.style.color = "white"
+      })
+
+
 
       var now3 = new Date();
       var day3 = dayNames[nextWorkingDay3[now3.getDay()]];
@@ -88,12 +113,35 @@ function appendMoves(el) {
       month = month.slice(0, 3);
       document.querySelector("#dateDay3").append(day3, date, month);
 
+      // ------------USE LOCAL STORAGE--------------
+
+      let day13 = document.getElementById("dateDay3")
+      let data13 = [day3, date, month]
+      day13.addEventListener("click", function () {
+            localStorage.setItem("day1", JSON.stringify(data13))
+            console.log(data13)
+            day13.style.background = "green"
+            day13.style.color = "white"
+      })
+
       var now4 = new Date();
       var day4 = dayNames[nextWorkingDay4[now4.getDay()]];
       var date = today.getUTCDate() + 3 + " ";
       var month = today.toLocaleString("default", { month: "long" });
       month = month.slice(0, 3);
       document.querySelector("#dateDay4").append(day4, date, month);
+
+      // ------------USE LOCAL STORAGE--------------
+
+      let day14 = document.getElementById("dateDay4")
+      let data14 = [day4, date, month]
+      day14.addEventListener("click", function () {
+            localStorage.setItem("day1", JSON.stringify(data14))
+            console.log(data14)
+            day14.style.background = "green"
+            day14.style.color = "white"
+      })
+
 
       var now5 = new Date();
       var day5 = dayNames[nextWorkingDay5[now5.getDay()]];
@@ -102,6 +150,17 @@ function appendMoves(el) {
       month = month.slice(0, 3);
       document.querySelector("#dateDay5").append(day5, date, month);
 
+      // ------------USE LOCAL STORAGE--------------
+
+      let day15 = document.getElementById("dateDay5")
+      let data15 = [day5, date, month]
+      day15.addEventListener("click", function () {
+            localStorage.setItem("day1", JSON.stringify(data15))
+            console.log(data15)
+            day15.style.background = "green"
+            day15.style.color = "white"
+      })
+
       var now6 = new Date();
       var day6 = dayNames[nextWorkingDay6[now6.getDay()]];
       var date = today.getUTCDate() + 5 + " ";
@@ -109,8 +168,18 @@ function appendMoves(el) {
       month = month.slice(0, 3);
       document.querySelector("#dateDay6").append(day6, date, month);
 
-      // var pp=document.createElement("p")
-      // pp.setAttribute("id","pp")
+      // ------------USE LOCAL STORAGE--------------
+
+      let day16 = document.getElementById("dateDay6")
+      let data16 = [day6, date, month]
+      day16.addEventListener("click", function () {
+            localStorage.setItem("day1", JSON.stringify(data16))
+            console.log(data16)
+            day16.style.background = "green"
+            day16.style.color = "white"
+      })
+
+
 
       var now7 = new Date();
       var day7 = dayNames[nextWorkingDay7[now7.getDay()]];
@@ -118,6 +187,83 @@ function appendMoves(el) {
       var month = today.toLocaleString("default", { month: "long" });
       month = month.slice(0, 3);
       document.querySelector("#dateDay7").append(day7, date, month);
+
+      // ------------USE LOCAL STORAGE--------------
+
+      let day17 = document.getElementById("dateDay7")
+      let data17 = [day7, date, month]
+      day17.addEventListener("click", function () {
+            localStorage.setItem("day1", JSON.stringify(data17))
+            console.log(data17)
+            day17.style.background = "green"
+            day17.style.color = "white"
+      })
 }
 
-      
+
+
+// document.getElementsByClassName("bookbtnonclick")
+// .addEventListener("click" , function(){
+//       window.location.href="FinalBook.html"
+// })
+// movies.addEventListener("click", function () {
+//       // GoToCart(el,i)
+//       localStorage.setItem("movie", JSON.stringify(data));
+//       window.location.href = "Cart.html";
+// });
+
+
+let d1 = document.getElementById("d1").innerText;
+function clickdata1() {
+      console.log(d1)
+      localStorage.setItem("d", JSON.stringify(d1))
+      let d=document.getElementById("d1")
+      d.style.background = "#FBC5C5"
+      d.style.color = "red"
+
+}
+let d2 = document.getElementById("d2").innerText;
+function clickdata2() {
+      console.log(d2)
+      localStorage.setItem("d", JSON.stringify(d2))
+      let d=document.getElementById("d2")
+      d.style.background = "#FBC5C5"
+      d.style.color = "red"
+
+}
+let d3 = document.getElementById("d3").innerText;
+function clickdata3() {
+      console.log(d3)
+      localStorage.setItem("d", JSON.stringify(d3))
+      let d=document.getElementById("d3")
+      d.style.background = "#FBC5C5"
+      d.style.color = "red"
+
+}
+let d4 = document.getElementById("d4").innerText;
+function clickdata4() {
+      console.log(d4)
+      localStorage.setItem("d", JSON.stringify(d4))
+      let d=document.getElementById("d4")
+      d.style.background = "#FBC5C5"
+      d.style.color = "red"
+
+}
+let d5 = document.getElementById("d5").innerText;
+function clickdata5() {
+      console.log(d5)
+      localStorage.setItem("d", JSON.stringify(d5))
+      let d=document.getElementById("d5")
+      d.style.background = "#FBC5C5"
+      d.style.color = "red"
+
+}
+let d6 = document.getElementById("d6").innerText;
+function clickdata6() {
+      console.log(d6)
+      localStorage.setItem("d", JSON.stringify(d6))
+      let d=document.getElementById("d6")
+      d.style.background = "#FBC5C5"
+      d.style.color = "red"
+
+}

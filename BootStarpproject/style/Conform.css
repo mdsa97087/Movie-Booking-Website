@@ -1,0 +1,54 @@
+* {
+      padding: 0%;
+      text-decoration: none;
+}
+
+.walletamount {
+      /* border: 2px solid green; */
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      background-color: #F6E7D8;
+}
+
+.walletamount1 {
+      /* border: 2px solid red; */
+      width: 98%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+}
+
+.secondwalletdiv {
+      /* border: 3px solid blue; */
+      margin-top: 25px;
+      gap: 25px;
+}
+
+#hallname {
+      /* border: 2px solid green; */
+      width: 400px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+}
+
+.hallnamediv {
+      /* border: 2px solid red; */
+      width: 98%;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.205rem;
+      justify-content: space-around;
+      margin: auto;
+}
+
+#conformbtn {
+      width: 300px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 15px;
+      border-radius: 15px;
+      border: navajowhite;
+      background-color: #00C897;
+      color: #FDFF00;
+}
